@@ -1,6 +1,7 @@
 package me.totalfreedom.bukkittelnet.session;
 
 import java.util.Set;
+import java.util.UUID;
 import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
@@ -179,6 +180,21 @@ public class SessionCommandSender implements ConsoleCommandSender
             }
 
         };
+    }
+
+    @Override
+    public void sendMessage(UUID uuid, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void sendMessage(UUID uuid, String[] strings) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void sendRawMessage(UUID uuid, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
